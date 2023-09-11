@@ -1,34 +1,91 @@
 <!DOCTYPE html>
 <html>
-	<head>
-        <title>Calculadora de hidratación</title>
-        <link rel="stylesheet" href="./style.css" />
-
-        <body>
-            <div id="contenedor">
-                <div id="calculadora">
-                    <div class="contenido">
-                        <h1>Hidratación Basal</h1>
-                        <p >Completa todos los datos</p>
-                        <input type="number" placeholder="Peso en kg" />
-                        <p>* Debe completar todos los datos</p>
-                        <button>Calcular</button>
-                        <p>71cc/h</p>
-                        <p>m+m/2 : 105cc/h</p>
-                    </div>
-                </div>
-                <div id="detalle">
-                    <div class="contenido">
-                        <h1>¿Como se calcula?</h1>
-                        <ul>
-                            <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-                            <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg</li>
-                            <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-                        </ul>
-                    </div>
+    <head>
+        <title>Calculadora de hidratación basal</title>
+        <link href="style.css" rel="stylesheet" />
+        <script defer src="./script.js">
+  </script>
+    </head>
+    <body>
+        <div id="contenedor">
+            <div id="calculadora">
+                <div class="contenido">
+                    <h1>
+                        Hidratación Basal
+                    </h1>
+                    <p class="item">
+                        Completa todos los datos
+                    </p>
+                    <input class="item" id="peso" placeholder="Peso en kg"
+                        type="number" />
+                    <p class="item" id="error">
+                        * Debe completar todos los datos
+                    </p>
+                    
+                    
                 </div>
             </div>
-          </body>
-          
-      
+            <div id="detalle">
+                <div class="contenido">
+                    <h1>
+                        ¿Como se calcula?
+                    </h1>
+                    <ul>
+                        <li>
+                            De 0kg a 10kg, se calcula 100cc por cada kilo.
+                        </li>
+                        <li>
+                            Se suman 50cc por cada kilo de peso por arriba de
+                            10kg, hasta 20kg
+                        </li>
+                        <li>
+                            De 20kg para arriba, se suman 20cc por cada kilo
+                            adicional
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            Peso
+                        </th>
+                        <th>
+                            Método
+                        </th>
+                        <th>
+                            Constante
+                        </th>
+                        <th>
+                            Volumen diario
+                        </th>
+                        <th>
+                            Mantenimiento
+                        </th>
+                        <th>
+                            m+m/2
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="table-peso">
+                        </td>
+                        <td id="table-metodo">
+                        </td>
+                        <td id="table-constante">
+                        </td>
+                        <td id="table-volumen-diario">
+                        </td>
+                        <td id="table-mantenimiento">
+                        </td>
+                        <td id="table-mm2">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
 </html>

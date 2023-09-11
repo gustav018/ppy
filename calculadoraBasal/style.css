@@ -13,30 +13,35 @@ body{
     position: absolute;
     inset: 0;
     margin: auto;
-}
-#calculadora{
-    background: white;
-    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
-    width: 50%;
-    height: 100%;
-    float: left;
-}
-
-#detalle{
-    background: #22c1a1;
-    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
-    width: 50%;
-    height: 100%;
-    float: left;
-    color: #f6f5f7;
-}
-.contenido{
+    border-radius: 10px;
+    overflow: auto;  /* En lugar de 'hidden' */
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+      0 10px 10px rgba(0,0,0,0.22);
+  }
+  .contenido{
     /* Estas tres lineas van a centrar el contenido verticalmente dentro de cada div */
     position: relative;
     top: 50%;
     transform: translateY(-50%);
     overflow: hidden;
     padding: 40px;
+}
+
+#calculadora{
+    background: white;
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 73%;
+    float: left;
+}
+
+#detalle{
+    background: #FF416C;
+    /* Con estas 3 lineas vamos a hacer que los divs queden lado a lado */
+    width: 50%;
+    height: 73%;
+    float: left;
+    color: #f6f5f7;
 }
 input {
 	width: 70%;
@@ -50,14 +55,68 @@ button {
 	font-weight: bold;
 	padding: 12px 45px;
 	border-radius: 30px;
-	background-color: #22c1a1;
-	border: 1px solid #22c1a1;
+	background-color: #FF416C;
+	border: 1px solid #FF416C;
 	color: #FFFFFF;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: transform 20ms ease-in;
+    margin-top: 30px;
 }
 
 button:active {
 	transform: scale(0.95);
+}
+#error{
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.resultado{
+    color: #0A81D1;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: none;
+}
+
+
+/* ... tus otros estilos ... */
+
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white; /* Para hacerlo similar al div de la calculadora */
+    border-radius: 10px; /* Para redondear las esquinas como en otros elementos */
+    
+}
+
+th, td {
+    padding: 12px 15px; /* Ajustar el padding para que coincida con otros elementos */
+    text-align: left;
+    
+}
+
+/* Para el encabezado de la tabla */
+th {
+    background-color: #FF416C; /* Color de fondo similar al div de detalles */
+    color: white; /* Texto en blanco */
+}
+
+/* Para las filas */
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Un fondo ligeramente diferente para cada segunda fila */
+}
+
+/* Para la última celda de cada fila */
+td:last-child, th:last-child {
+    border-right: none;
+}
+
+/* Para la primera celda de cada fila */
+td:first-child, th:first-child {
+    border-left: none;
 }
