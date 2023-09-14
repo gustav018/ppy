@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+  margin: 0 auto;
+  }
+     
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+     
+  #guess-input {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 250px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 250px;
+  }
+  .contenido {
+    text-align: center;
+  }
+  #error{
+    color: #e90909d4;
+    font-weight: 800;
+  }
+     
+  #guess-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0CBABA;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+  max-width: 250px;
+  }
+  #corazones{
+    font-size: 24px;
+  }
+     
+  button:active {
+      transform: scale(0.95);
+  }
+     
+  .letter {
+    flex: 1 0 auto;
+    max-width: 39px;
+    min-width: 20px;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ddd;
+    border: none;
+    border-radius: 3px;
+  }
+     
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+     
+  .input-area{
+      margin: 30px;
+  }
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
