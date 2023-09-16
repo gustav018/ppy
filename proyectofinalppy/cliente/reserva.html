@@ -1,0 +1,207 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Men's Salon | Reservar un turno</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Men's Salon Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+	<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-firestore.js"></script>
+
+<!-- Tu script personalizado -->
+<script src="js/horarios.js"></script>
+<script src="js/config.js"></script>
+<script src="js/script.js"></script>
+<script src="js/consultar.js"></script>
+
+	<!-- css files -->
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
+    <link href="css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+	<!-- //css files -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/css/select2.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0/dist/js/select2.min.js"></script>
+
+	<!-- google fonts -->
+    <link href="//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+	<!-- //google fonts -->
+	
+</head>
+<body>
+
+<!-- header -->
+<header>
+	<div class="container">
+		<!-- nav -->
+		<nav class="py-md-4 py-3 d-lg-flex">
+			<div id="logo">
+				<h1> <a href="index.html"><span class="fa fa-scissors"></span> Men's Salon</a></h1>
+			</div>
+			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
+			<input type="checkbox" id="drop" />
+			<ul class="menu mt-lg-4 ml-auto">
+				<li class=""><a href="index.html">Home</a></li>
+				
+				<li class="active mr-2"><a href="reserva.html">Reservas</a></li>
+				<li class=""><span><span class="fa fa-phone"></span> +595985 798941</span></li>
+			</ul>
+		</nav>
+		<!-- //nav -->
+	</div>
+</header>
+<!-- //header -->
+
+<!-- banner -->
+<div class="inner-banner" id="home">
+	<div class="inner-banner-overlay">
+		<div class="container">
+			
+		</div>
+	</div>
+</div>
+<!-- //banner -->
+
+<!-- page details -->
+<div class="breadcrumb-agile">
+	<div class="container">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="index.html">Home</a>
+			</li>
+			<li class="breadcrumb-item active" aria-current="page">Reservar un turno</li>
+		</ol>
+	</div>
+</div>
+<!-- //page details -->
+
+<!-- contact -->
+<section class="contact py-sm-5 py-4">
+	<div class="container py-md-3">
+		<h2 class="heading text-capitalize text-center mb-lg-5 mb-sm-4 mb-3"> Reservar un turno</h2>
+	
+		<div class="contact-form" id="reserva">
+				<form action="#" method="post">
+					<div class="row main-w3layouts-sectns">
+						<div class="col-lg-3 col-md-6 w3-btm-spc form-text1">
+							<label><span class="fa fa-user"></span> Seleccione una fecha:</label>
+							<input type="date" name="Fecha" required="">
+						</div>
+						<div class="col-lg-3 col-md-6 w3-btm-spc form-text2">
+							<label><span class="fa fa-phone"></span> Horario Disponible:</label>
+							<select class="select2" name="Horario" style="width: 100%;" required>
+								<option value=""></option>
+							
+							</select>
+						</div>
+						<div class="col-lg-3 col-md-6 w3-btm-spc form-text1">
+							<label><span class="fa fa-envelope-open"></span> Nombre:</label>
+							<input type="text" name="Nombre" placeholder="Jose Perez" required="">
+						</div>
+						<div class="col-lg-3 col-md-6 w3-btm-spc form-text2">
+							<label><span class="fa fa-pencil"></span> Numero de Contacto:</label>
+							<input type="text" name="Numero de Contacto" placeholder="0985123456" required="">
+						</div>
+					</div>
+					<div class="main-w3layouts-sectns ">
+						<div class="w3-btm-spc form-text2 p-0">
+							<label><span class="fa fa-pencil"></span> Servicios Disponibles:</label>
+							<select class="select2" name="Servicios" style="width: 100%;" required>
+								<option value="" disabled selected>Seleccionar un servicio</option>
+								<option value="Corte">Corte</option>
+								<option value="Barba">Barba</option>
+								<option value="Corte + Barba">Corte + Barba</option>
+							</select>
+						</div>
+					</div>
+					<button class="btn">Reservar Ahora</button>
+				</form>
+			
+			
+		
+			
+		</div>
+	</div>
+</section>
+<!-- //contact -->
+
+
+
+<!-- footer top-->
+<div class="footer-top py-md-4">
+	<div class="container py-4">
+		<div class="row">
+			<div class="col-lg-9">
+				<h4 class="footer-top-text text-capitalize">Una amplia gama de servicios de peluquería masculina</h4>
+			</div>
+			<div class="col-lg-3 text-lg-right mt-lg-0 mt-4">
+				<a href="#" class="text-capitalize serv_link btn">Ir a nuestros servicios</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- //footer top-->
+
+<!-- footer -->
+<footer class="py-sm-5 py-4">
+	<div class="container py-md-3">
+		<div class="footer-logo text-center">
+			<a class="navbar-brand" href="index.html"><span class="fa fa-scissors"></span>Men's Salon</a>
+		</div>
+		<div class="row my-4 footer-middle">
+			<div class="col-md-5 text-md-right address">
+				<p><span class="fa fa-map-marker"></span>Location : Mcal. Estigarribia</p>
+			</div>
+			<div class="col-md-2 text-md-center my-md-0 my-sm-4 my-2 footer-icon">
+				<span class="fa fa-scissors"></span>
+			</div>
+			<div class="col-md-5 text-md-left phone">
+				<p><span class="fa fa-phone"></span>Phone : +595 985 798941</p>
+				<p><span class="fa fa-envelope-open"></span>Email : <a href="mailto:example@mail.com">hola@gustavofleitas.com</a></p>
+			</div>
+		</div>
+		<div class="footer-grid">
+			<div class="social text-center">
+				<ul class="d-flex justify-content-center">
+					<li class="mx-2"><a href="#"><span class="fa fa-facebook"></span></a></li>
+					<li class="mx-2"><a href="#"><span class="fa fa-twitter"></span></a></li>
+					<li class="mx-2"><a href="#"><span class="fa fa-rss"></span></a></li>
+					<li class="mx-2"><a href="#"><span class="fa fa-linkedin"></span></a></li>
+					<li class="mx-2"><a href="#"><span class="fa fa-google-plus"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer -->
+
+<!-- copyright -->
+<div class="copyright py-3 text-center">
+	<p>© 2019 Men's Salon. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="=_blank"> W3layouts </a></p>
+</div>
+<!-- //copyright -->
+
+<!-- move top icon -->
+<a href="#home" class="move-top text-center"></a>
+<!-- //move top icon -->
+	
+</body>
+</html>
